@@ -175,7 +175,7 @@ func PostSlackMessage(atts *[]SlackAttachment) error {
 
 	v := url.Values{}
 	v.Add("token", os.Getenv("SLACK_AUTH_TOKEN"))
-	v.Add("channel", "issue-chan")
+	v.Add("channel", "rikka-chan")
 	v.Add("text", "@yukpiz\n今日のタスク一覧だよ〜\n今日も1日がんばれ〜！\nhttps://github.com/yukpiz/private#boards")
 	v.Add("icon_url", "https://i.gyazo.com/874720c0b9fc4f5b05688714c68e1f1d.jpg")
 	v.Add("link_names", "true")
